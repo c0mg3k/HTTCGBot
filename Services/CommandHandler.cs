@@ -23,6 +23,38 @@ namespace HTTCGDiscordBot.Services
             _config = config;
 
             _discord.Ready += OnReady;
+            _discord.MessageReceived += OnMessageReceived;
+        }
+
+        private async Task OnMessageReceived(SocketMessage arg)
+        {
+            try
+            {
+                var msg = arg as SocketUserMessage;
+
+                if (msg.Author.IsBot)
+                    return;
+                var context = new SocketCommandContext(_discord, msg);
+
+                int pos = 0;
+                if (msg.HasStringPrefix(_config["prefix"], ref pos) || msg.HasMentionPrefix(_discord.CurrentUser, ref pos))
+                {
+                    Console.WriteLine($"User {msg.Author} has made a command request");
+                    var result = await _commands.ExecuteAsync(context, pos, _provider);
+                    if (!result.IsSuccess)
+                    {
+                        var reason = result.Error;
+
+                        await context.Channel.SendMessageAsync($"The Following Error has Occured... \n {reason}");
+                        //track error info in the console.... should probably add message and user info...
+                        Console.WriteLine(reason);
+                    }
+                };
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Error Message: {ex.Message} \nError Stack Trace: {ex.StackTrace}");
+            }
         }
 
         private Task OnReady()

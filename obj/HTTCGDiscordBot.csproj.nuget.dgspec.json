@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\HometownTCG\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj": {}
+    "C:\\programming\\HTTCG\\HTTCG.DiscordBot\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj": {}
   },
   "projects": {
-    "C:\\HometownTCG\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj": {
+    "C:\\programming\\HTTCG\\HTTCG.DiscordBot\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\HometownTCG\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj",
+        "projectUniqueName": "C:\\programming\\HTTCG\\HTTCG.DiscordBot\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj",
         "projectName": "HTTCGDiscordBot",
-        "projectPath": "C:\\HometownTCG\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj",
-        "packagesPath": "C:\\Users\\jchristiansen\\.nuget\\packages\\",
-        "outputPath": "C:\\HometownTCG\\HTTCGDiscordBot\\obj\\",
+        "projectPath": "C:\\programming\\HTTCG\\HTTCG.DiscordBot\\HTTCGDiscordBot\\HTTCGDiscordBot.csproj",
+        "packagesPath": "C:\\Users\\joshc\\.nuget\\packages\\",
+        "outputPath": "C:\\programming\\HTTCG\\HTTCG.DiscordBot\\HTTCGDiscordBot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jchristiansen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joshc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -78,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
